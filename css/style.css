@@ -44,6 +44,7 @@ h2{
     border-radius: 5px;
     border: 1px solid #B91450;
     padding: 5px 10px;
+    text-align: center;
 }
 
 button{
@@ -80,4 +81,8 @@ button{
 
 .info-col{
     padding: 30px;
+}
+
+.info-col h4{
+    margin-bottom: 20px;
 }
