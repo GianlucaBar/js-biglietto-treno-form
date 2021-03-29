@@ -2,6 +2,11 @@ var generateButton = document.getElementById('generate-btn');
 
 generateButton.addEventListener('click', function(){
 
+    // mostra biglietto
+    document.getElementById("show-hide").style.display = "block";
+    
+
+
     //  salva nome passeggero
     var getUserName = document.getElementById('user-name-input');
     var userName = getUserName.value;
@@ -43,8 +48,33 @@ generateButton.addEventListener('click', function(){
     document.getElementById('result-carrozza').innerHTML = getRndInteger(1, 10);
 
     document.getElementById('result-prezzo').innerHTML = finalPrice + ' €';
+});
+
+
+var cancelButton = document.getElementById('cancel-btn');
+cancelButton.addEventListener('click', function(){
+    // nascondi
+    document.getElementById("show-hide").style.display = "none";
+
+    // annulla input 
+    document.getElementById('user-name-input').value = '';
+
+    document.getElementById('age-input').value = '';
+
+    document.getElementById('km-input').value = '';
 })
+
+
 
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
   }
+
+  function myFunction() {
+    var x = document.getElementById("show-hide");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }  

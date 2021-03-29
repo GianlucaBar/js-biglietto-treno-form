@@ -12,10 +12,12 @@
 </head>
 <body>
     <div class="wrapper">
+        <!-- CALCOLATORE -->
         <div class="calculator">
             <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
 
             <div class="calc_box">
+                <!-- input utente  -->
                 <div class="input-box">
                     <div>
                         <label for="user-name-input">Nome Utente</label>
@@ -40,6 +42,7 @@
 
                 </div>
 
+                <!-- bottoni  -->
                 <div>
                     <button id="generate-btn">Genera</button>
 
@@ -47,19 +50,26 @@
                 </div>
             </div>
         </div>
+        <!-- FINE CALCOLATORE  -->
+
+        <!-- INIZIO BIGLIETTO  -->
 
         <div class="ticket-section">
             <h2>IL TUO BIGLIETTO</h2>
 
-            <div class="ticket_box">
+            <div class="ticket_box" id="show-hide">
                 <h3>DETTAGLIO PASSEGGERI</h3>
 
                 <div class="ticket">
+
+                    <!-- box passeggero  -->
                     <div class="pass-name">
                         <h4>NOME PASSEGGERO</h4>
 
                         <span id="result-username"></span>
                     </div>
+
+                    <!-- box info biglietto -->
                     <div class="ticket-info">
                         <div class="info-col">
                             <h4>Offerta</h4>
@@ -80,13 +90,12 @@
                             <h4>Costo Biglietto</h4>
                             <span id="result-prezzo"></span>
                         </div>  
-                        
-                        
+                           
                     </div>
                 </div>
             </div>
         </div>
-
+        <!-- FINE BIGLIETTO  -->
     </div>
 
     <script src="js/script.js"></script>

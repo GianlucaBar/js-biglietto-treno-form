@@ -61,6 +61,7 @@ button{
 .ticket_box{
     padding: 15px;
     text-align: left;
+    display: none;
 }
 .ticket{
     display: flex;
