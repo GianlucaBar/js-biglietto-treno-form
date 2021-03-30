@@ -25,11 +25,13 @@ h2{
 .calc_box{
     background-color: white;
     border-radius: 10px;
-    padding: 20px;
+    padding: 20px; 
+    box-shadow: 5px 5px 19px 1px #000000;
 }
 
 .ticket_box{
     background-color: white;
+    overflow: hidden;
 }
 
 .input-box{
@@ -84,6 +86,6 @@ button{
     padding: 30px;
 }
 
-.info-col h4{
+.ticket_box h4{
     margin-bottom: 20px;
 }

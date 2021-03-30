@@ -23,20 +23,16 @@ generateButton.addEventListener('click', function(){
 
     var userOffer = 'Prezzo standard';
 
-    if(userAge == 'Minorenne'){
-        userOffer = 'Sconto Minorenne'
-    } else if( userAge == 'Over 65'){
-        userOffer = 'Sconto Over'
-    }
-
     // prezzo finale 
     var pricePerKm = 0.21;
     var finalPrice = kmNumber * pricePerKm;
 
     if (userAge == 'Minorenne'){
         finalPrice = finalPrice - (finalPrice * 0.2);
+        userOffer = 'Sconto Minorenne';
     } else if (userAge == 'Over 65'){
         finalPrice = finalPrice - (finalPrice * 0.4);
+        userOffer = 'Sconto Over';
     }
     // stampa 
     document.getElementById('result-username').innerHTML = userName;
@@ -68,4 +64,4 @@ cancelButton.addEventListener('click', function(){
 
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
-}
+  }
